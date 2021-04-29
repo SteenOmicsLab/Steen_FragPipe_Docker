@@ -5,9 +5,13 @@ FROM ubuntu:18.04
 RUN apt-get update
 RUN apt-get upgrade
 RUN apt-get install -y openjdk-8-jre
-RUN apt-get install rclone
+RUN apt install -y curl
+RUN apt install zip -y
 RUN apt-get install vim -y
 RUN apt-get install -y libgomp1
+
+#rclone things
+RUN curl https://rclone.org/install.sh | bash
 
 RUN mkdir /root/msfragger/
 RUN mkdir /root/analysis/
