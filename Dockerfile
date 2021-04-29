@@ -25,6 +25,7 @@ CMD ["bash"]
 # Download the executable files for Fragpipe/msfragger through rclone
 # download the samples files through rclone
 #chmod all the executable files in /root/msfragger/ with [chmod 770 -R /root/msfragger/]
+#chmod u+x /root/msfragger/tools/philosopher/philosopher 
 # cd to the outputfiles directory [cd /root/analysis/outputfiles/]
 # run the Shell script: /root/msfragger/FragPipe_docker_Shell.sh
 #Once done, upload all results in the outputfiles with Rclone to Gdrive
